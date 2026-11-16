@@ -2,13 +2,11 @@ package se.bocheng.device;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class SmokeTest {
     @Test
     void testTemp() {
-        boolean expected = true;
-        boolean actual = ((1 + 1) == 2 );
-        assertEquals(expected, actual);
+        assertThat(1+1).isEqualTo(2);
     }
 }
